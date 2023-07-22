@@ -1,0 +1,75 @@
+{
+  "kind": "collectionType",
+  "collectionName": "basic_users",
+  "info": {
+    "singularName": "basic-user",
+    "pluralName": "basic-users",
+    "displayName": "basic_user",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "password": {
+      "type": "password",
+      "private": true,
+      "required": true
+    },
+    "birth_date": {
+      "type": "date",
+      "required": true
+    },
+    "contact": {
+      "type": "biginteger"
+    },
+    "skill": {
+      "type": "enumeration",
+      "enum": [
+        "Front End",
+        "Back End",
+        "Full Stack",
+        "Dev Ops",
+        "Data Analyst",
+        "Data Scientist",
+        "Data Engineer",
+        "UI/UX Designer",
+        "UX Researcher",
+        "Product Management",
+        "ML Engineer"
+      ]
+    },
+    "province": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "interest": {
+      "type": "enumeration",
+      "enum": [
+        "Human Healthcare and Living Wellbeings",
+        "Tourism, Culture, and Hospitality",
+        "Food Accessibility, Agribusiness, Water Forest, and Food Security",
+        "Education, Learning, and Personal Development",
+        "Job, Talent, and Employment",
+        "SME/UMKM Empowerment",
+        "Sustainable Living",
+        "Ocean and Maritime Economy"
+      ]
+    },
+    "about": {
+      "type": "text"
+    }
+  }
+}

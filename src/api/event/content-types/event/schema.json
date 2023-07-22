@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "events",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "skill_roles": {
+      "type": "enumeration",
+      "enum": [
+        "Front End",
+        "Back End",
+        "Full Stack",
+        "Dev Ops",
+        "Data Analyst",
+        "Data Scientist",
+        "Data Engineer",
+        "UI/UX Designer",
+        "UX Researcher",
+        "Product Management",
+        "ML Engineer"
+      ]
+    },
+    "other_option_skill": {
+      "type": "string"
+    }
+  }
+}
